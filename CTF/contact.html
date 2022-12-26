@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShoeEX</title><!-- Bootstrap 5.1.2 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" rel="stylesheet">
+</head>
+<body style="overflow-x:hidden;">
+   
+        <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">ShoeEx</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="FAQpage.html">Help</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contacts</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="profilepage.html">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cart.html">Cart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="redirect.html">Sign Out</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+   
+
+    <div class="container-fluid">
+        
+
+
+<div style="text-align:center;padding-top:50px;">
+    <h1>Contact Us</h1>
+    <p>Can't find an answer? We'd love to hear form you!</p>
+</div>
+
+<div style="display:flex;align-items:center;justify-content:center;">
+    <div style="width:400px;height:400px;background-color:#D8D8D8;padding: 30px;margin: 60px;text-align:center;position:relative">
+        <h1>Email</h1>
+        <p style="padding:20px;">Email us any questions and we will try to get back to you as soon as possible!</p>
+        <div style="position:absolute;bottom:35%;right:20%">
+            <a href="mailto:shoestore_support@contact.com">shoestore_support@contact.com</a>
+        </div>
+    </div>
+    <div style="width:400px;height:400px;background-color:#D8D8D8;padding: 30px;margin: 60px;text-align:center;position:relative">
+        <h1>Live Chat</h1>
+        <p style="padding:20px;">Want to talk to our customer support over live chat? Click here.</p>
+        <button class="chat-btn" style="margin-top:20px;margin-bottom:60px;padding:10px;border-radius:10px;">Open Live Chat</button>
+        <div style="position:absolute;bottom:0;right:30%">
+            <p>Open Monday-Friday</p>
+            <p>10 am - 6 pm</p>
+        </div>
+    </div>
+    <div style="width:400px;height:400px;background-color:#D8D8D8;padding: 30px;margin: 60px;text-align:center;position:relative">
+        <h1>Hotline</h1>
+        <p style="padding:20px;">Interested in speaking to our customer support over the phone? Here is the hotline!</p>
+        <div style="position:absolute;bottom:35%;right:33%">
+            <a href="tel:+1-111-111-111-1">+1-111-111-111-1</a>
+        </div>
+        <div style="position:absolute;bottom:0;right:30%">
+            <p>Open Monday-Friday</p>
+            <p>10 am - 5 pm</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    .chat-popup {
+    position:fixed;
+    bottom:80px;
+    right:120px;
+    height:400px;
+    width: 300px;
+    background-color: #C1C1C1;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.75rem;
+    border-radius: 20px;
+    }
+
+    .show {
+    display:flex;
+    }
+
+    .chat-area{
+    height: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    }
+
+    .income-msg{
+        display:flex;
+        align-items:center;
+    }
+
+    .income-msg .msg{
+        background-color: dodgerblue;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 25px;
+        margin-left: 1rem;
+    }
+
+    .input-area{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    input[type="text"]{
+        width: 100%;
+        border: 1px solid #ccc;
+        font-size: 1 rem;
+        border-radius: 5px;
+        height: 2.2rem;
+    }
+
+    .submit{
+    padding: 0.25rem 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .out-msg{
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .my-msg{
+        display:flex;
+        justify-content: flex-end;
+        margin: 0.75rem;
+        padding: 0.5rem;
+        background-color: white;
+        border-radius: 10px;
+        word-break: break-all
+    }
+
+</style>
+
+<div class="chat-popup">
+    <div class="chat-area">
+        <div class = "income-msg">
+            <span class="msg">Hi, How can I help you?</span>
+        </div>
+    </div>
+    <div class="input-area">
+        <input class="input-text" type="text">
+        <button class="submit">Send</button>
+    </div>
+</div>
+
+<script>
+    var popup = document.querySelector('.chat-popup');
+    var chatBtn = document.querySelector('.chat-btn');
+    var submitBtn = document.querySelector('.submit');
+    var chatArea = document.querySelector('.chat-area');
+    var inputElement = document.querySelector('.input-text');
+    chatBtn.addEventListener('click',()=> {
+        popup.classList.toggle('show');
+    })
+    submitBtn.addEventListener('click', ()=> {
+        let userInput = inputElement.value;
+        let temp = `<div class="out-msg">
+            <span class="my-msg">${userInput}</span>
+            </div>`;
+        chatArea.insertAdjacentHTML("beforeend",temp);
+        inputElement.value = '';
+    })
+
+
+</script>
+
+
+
+    </div>
+
+    
+<!-- Popper 2.10.2, Bootstrap 5.1.2 JavaScript -->
+<script crossorigin="anonymous"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
